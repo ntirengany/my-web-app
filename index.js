@@ -33,7 +33,7 @@ const server = createServer((req, res) => {
   if(req.url === "/about"){
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/plain");
-    res.end("Hello world!");
+    res.end(<html><b>About page route.</b></html>);
   }
 });
 
